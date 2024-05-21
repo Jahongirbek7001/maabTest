@@ -1,0 +1,39 @@
+.questionsDiv {
+    background-color: rgba(245, 245, 247, 1);
+    padding: 30px 0;
+}
+.questionsContent {
+    width: 90%;
+    margin: 30px auto;
+}
+.accordion {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.questionsTitle{
+    text-align: center;
+}
+.questionsTitle span {
+    font-size: 36px;
+    font-weight: 500;
+}
+.questionsTitle p {
+    color: rgba(93, 93, 95, 1);
+}
+.questionsDiv .accordion .accordion-item {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 412px) {
+    .questionsTitle span {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .accordion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}

@@ -1,0 +1,96 @@
+.kursTop {
+    margin: 50px auto;
+    width: 90%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,auto);
+}
+.card {
+    height: 350px;
+    padding: 20px;
+    background-color: rgba(245, 245, 247, 1);
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+.cardImg {
+    padding: 50px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(226, 96, 32, 1);
+    border-radius: 20px;
+}
+.cardInfo {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+.kursBottom {
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 50px;
+    background: linear-gradient(60deg, rgba(95, 149, 254, 1) 0%, rgba(1, 82, 238, 1) 80%);
+}
+.kursBottomTitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.card2Box {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.card2Box .card2 {
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+.card2Box .card2 span {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+.card2Box .card2 p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 412px) {
+    .kursBottom {
+        padding: 30px 10px;
+    }
+    .kursTop {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .card2Box{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .card2Box .card2 span {
+        font-size: 16px;
+    }
+
+    .card2Box .card2 {
+        height: 100%;
+    }
+
+    .kursBottomTitle {
+        font-size: 24px;
+    }
+
+}

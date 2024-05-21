@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 23px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logoSocial {
+    width: 20px;
+    height: 20px;
+    transform: translateY(3px);
+}
+
+select {
+    border: 0;
+    color: rgba(93, 93, 95, 1);
+}
+
+.verticalSlesh {
+    color: rgba(235, 235, 235, 1);
+}
+
+.headerTopContent {
+    float: right;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 0 25px;
+}
+
+.logoSite img {
+    width: 152px;
+}
+
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.headerBottom .aloqa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    color: rgba(251, 95, 18, 1);
+}
+
+.headerBottom .aloqa img {
+    width: 18px;
+    height: 18px;
+}
+
+.headerBottom .aloqaBtn {
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(53, 52, 55, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 412px) {
+    .headerTopContent {
+        float: none;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .headerTopContent ul, div {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .logoSite {
+        margin: 20px auto;
+    }
+
+    .logoSite img {
+        width: 300px;
+    }
+
+    header .headerBottom {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        padding: 0;
+        margin: 0 auto;
+    }
+    .headerBottom .aloqa {
+        margin: 0 auto;
+    }
+
+    .verticalSlesh {
+        display: none;
+    }
+}

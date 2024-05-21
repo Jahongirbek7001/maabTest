@@ -1,0 +1,66 @@
+.grantDiv {
+    width: 90%;
+    height: 467px;
+    border-radius: 20px;
+    margin: 30px auto;
+    background-image: url("https://academy.maab.uz/static/assets/grant-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.grantDiv .grantBox {
+    width: 400px;
+    transform: translate(50px, 100px);
+}
+.grantDiv .grantTitle{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.grantDiv .button {
+    width: 250px;
+    height: 50px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 45px;
+    text-align: center;
+    transform: translate(50px, 100px);
+
+}
+
+@media screen and (max-width: 412px) {
+    .grantDiv {
+        height: 150px;
+    }
+
+    .grantDiv .grantTitle {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .grantBox p {
+        font-size: 10px;
+    }
+
+    .grantDiv .grantBox {
+        width: 95%;
+        transform: translate(10px, 10px);
+    }
+    .grantDiv .button {
+        width: 150px;
+        height: 25px;
+        border: 1px solid white;
+        padding: 1px;
+        margin: 25px 0;
+        font-size: 13px;
+        border-radius: 15px;
+        transform: translate(20px, 0px);
+    }
+
+    .cardImg {
+        width: 310px;
+        font-size: 24px;
+    }
+}

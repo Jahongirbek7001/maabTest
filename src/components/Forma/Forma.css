@@ -1,0 +1,113 @@
+.formaDiv {
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgba(245, 245, 247, 1);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.formaDiv .formaTitle span {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.formaDiv form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.formaDiv form .formInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+form input,
+select {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 247, 1);
+    padding: 10px;
+    margin: 10px 20px 10px 0;
+}
+
+.formInfo:last-child {
+    margin: 20px 0;
+}
+
+.checkBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkBox label {
+    font-size: 12px;
+}
+
+.checkBox label span {
+    color: rgba(40, 104, 178, 1);
+}
+
+.checkBox .check {
+    width: 20px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.submitBtn button {
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(35, 107, 244, 1);
+    transform: translateX(70px);
+}
+
+.submitBtn button img {
+    color: white;
+}
+
+.formaDiv section {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 412px) {
+    .formaDiv {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .formaDiv .formaTitle span {
+        font-size: 24px;
+    }
+
+    .formaDiv form .formInfo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .formaDiv form {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    form input, select {
+        margin: 10px 10px 10px 0;
+    }
+
+    .formaDiv section {
+        margin: 0 auto;
+    }
+
+    .formaDiv .checkBox {
+        margin-bottom: 20px;
+    }
+
+}

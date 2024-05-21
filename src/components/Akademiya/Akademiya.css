@@ -1,0 +1,77 @@
+.akademiyaDiv {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.akademiyaTittle {
+    padding: 0 50px;
+}
+
+.akademiyaTittle span {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(20, 96, 242, 1);
+}
+
+.cardAkademiyaBox {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.cardAkademiya {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 247, 1);
+    padding: 30px 0;
+}
+
+.cardAkademiya .cardTitle {
+    padding: 0 40px;
+}
+
+.cardAkademiya span {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(20, 96, 242, 1);
+}
+
+.cardAkademiya .price {
+    width: 100%;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.cardAkademiya .price span {
+    color: rgba(69, 69, 69, 1);
+    font-size: 12px;
+}
+
+.cardAkademiya .price p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 412px) {
+    .akademiyaTittle {
+        padding: 0 10px;
+    }
+
+    .akademiyaTittle span {
+        font-size: 24px;
+    }
+
+    .cardAkademiyaBox {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+    }
+
+    .cardAkademiya span {
+        font-size: 20px;
+        text-align: center;
+    }
+}
